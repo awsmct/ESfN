@@ -121,5 +121,11 @@ namespace WpfApp1
 		{
 			Clipboard.SetText("powercfg /h off");
 		}
+
+		private void OpenAbout(object sender, RoutedEventArgs e)
+		{
+			About OpenAbt = new About();
+			OpenAbt.Show();
+		}
 	}
 }
