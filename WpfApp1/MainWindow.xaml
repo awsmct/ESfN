@@ -9,7 +9,7 @@
         <Menu Height="23" VerticalAlignment="Top">
             <MenuItem Header="File">
                 <MenuItem Header="Open CMD" Click="OpenCMD"></MenuItem>
-                <Separator />
+                <MenuItem Header="Converter" Click="ConverterOpen"></MenuItem>
                 <MenuItem Header="Exit" Click="ExitClick"></MenuItem>
             </MenuItem>
             <MenuItem Header="View" ></MenuItem>
@@ -23,7 +23,7 @@
         <Button x:Name="TwoH" Content="2 hour" HorizontalAlignment="Left" Margin="182,144,0,0" VerticalAlignment="Top" Width="75" Click="TwoH_Click"/>
         <Button x:Name="ThreeH" Content="3 hour" HorizontalAlignment="Left" Margin="182,169,0,0" VerticalAlignment="Top" Width="75" Click="ThreeH_Click"/>
         <Button x:Name="ClipBrd" Content="Copy to clipboard" HorizontalAlignment="Left" Margin="146,24,0,0" VerticalAlignment="Top" Width="101" Click="CopyClbd"/>
-        <TextBlock HorizontalAlignment="Left" Margin="154,49,0,0" TextWrapping="Wrap" Text="powercfg /h off" VerticalAlignment="Top" Height="23" Width="86"/>
+        <TextBlock x:Name="___Без_имени_" HorizontalAlignment="Left" Margin="154,49,0,0" TextWrapping="Wrap" Text="powercfg /h off" VerticalAlignment="Top" Height="23" Width="86"/>
 
     </Grid>
 </Window>

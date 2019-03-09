@@ -127,5 +127,13 @@ namespace WpfApp1
 			About OpenAbt = new About();
 			OpenAbt.Show();
 		}
+
+		private void ConverterOpen(object sender, RoutedEventArgs e)
+		{
+			Converter OpenConv = new Converter();
+			OpenConv.Show();
+		}
 	}
 }
+
+

@@ -49,3 +49,5 @@ E:\GitHub\ESfN\WpfApp1\obj\Debug\ESfN.exe
 E:\GitHub\ESfN\WpfApp1\obj\Debug\ESfN.pdb
 E:\GitHub\ESfN\WpfApp1\obj\Debug\About.g.cs
 E:\GitHub\ESfN\WpfApp1\obj\Debug\About.baml
+E:\GitHub\ESfN\WpfApp1\obj\Debug\Converter.g.cs
+E:\GitHub\ESfN\WpfApp1\obj\Debug\Converter.baml
