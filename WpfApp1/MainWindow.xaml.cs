@@ -31,10 +31,6 @@ namespace WpfApp1
 		public MainWindow()
 		{
 			InitializeComponent();
-			if (!PreStart.requre)
-			{
-
-			}
 			PreStart prestart = new PreStart();
 			prestart.ShowDialog();
 		}
