@@ -103,5 +103,23 @@ namespace WpfApp1
 		{
 			Time.Text = "10800";
 		}
+
+		private void OpenCMD(object sender, RoutedEventArgs e)
+		{
+			Process cmd1 = new Process();
+			cmd1.StartInfo.FileName = "cmd.exe";
+			cmd1.StartInfo.Verb = "runas";
+			cmd1.Start();
+		}
+
+		private void ExitClick(object sender, RoutedEventArgs e)
+		{
+			this.Close();
+		}
+
+		private void CopyClbd(object sender, RoutedEventArgs e)
+		{
+			Clipboard.SetText("powercfg /h off");
+		}
 	}
 }

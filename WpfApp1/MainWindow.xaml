@@ -3,17 +3,27 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="ESfN" Height="230" Width="275">
+        Title="ESfN" Height="230" Width="275" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Menu Height="23" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Open CMD" Click="OpenCMD"></MenuItem>
+                <Separator />
+                <MenuItem Header="Exit" Click="ExitClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="View" ></MenuItem>
+            <MenuItem Header="Edit" ></MenuItem>
+        </Menu>
         <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="75" Click="Start_Click"/>
         <Button x:Name="Stop" Content="Stop" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" Width="75" Click="Stop_Click"/>
-        <TextBox x:FieldModifier="public" x:Name="Time" HorizontalAlignment="Left" Height="23" Margin="1,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Set time in seconds" VerticalAlignment="Top"/>
+        <TextBox x:FieldModifier="public" x:Name="Time" HorizontalAlignment="Left" Height="23" Margin="1,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,28,0,0" TextWrapping="Wrap" Text="Set time in seconds:" VerticalAlignment="Top"/>
         <Button x:Name="OneH" Content="1 hour" HorizontalAlignment="Left" Margin="182,119,0,0" VerticalAlignment="Top" Width="75" Click="OneH_Click"/>
         <Button x:Name="TwoH" Content="2 hour" HorizontalAlignment="Left" Margin="182,144,0,0" VerticalAlignment="Top" Width="75" Click="TwoH_Click"/>
         <Button x:Name="ThreeH" Content="3 hour" HorizontalAlignment="Left" Margin="182,169,0,0" VerticalAlignment="Top" Width="75" Click="ThreeH_Click"/>
+        <Button x:Name="ClipBrd" Content="Copy to clipboard" HorizontalAlignment="Left" Margin="146,24,0,0" VerticalAlignment="Top" Width="101" Click="CopyClbd"/>
+        <TextBlock HorizontalAlignment="Left" Margin="154,49,0,0" TextWrapping="Wrap" Text="powercfg /h off" VerticalAlignment="Top" Height="23" Width="86"/>
 
     </Grid>
 </Window>
