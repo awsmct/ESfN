@@ -48,11 +48,11 @@ namespace WpfApp1
 				MessageBox.Show(ex.ToString());
 				check = false;
 			}
-			return;
 		}
 
-		public void StartAsync()
+		public async void StartTimer()
 		{
+			await Task.Run(() => Thread.Sleep(usertime * 1000));
 			if (token.IsCancellationRequested) return;
 			Process cmd = new Process();
 			cmd.StartInfo.FileName = "cmd.exe";
@@ -74,7 +74,7 @@ namespace WpfApp1
 			try
 			{
 				if (token.IsCancellationRequested) return;
-				await Task.Run(() => StartAsync());
+				await Task.Run(() => StartTimer());
 			}
 			catch (Exception ex)
 			{
