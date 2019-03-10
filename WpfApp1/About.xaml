@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="About" Height="200" Width="200" WindowStartupLocation="CenterScreen">
+        Title="Help" Height="200" Width="200" WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="124" Width="172" TextAlignment="Center"><Run Text="Before start you need open &quot;File&quot; and run"/><Run Text=" "/><Run Text="&quot;Open"/><Run Text=" "/><Run Text="CMD&quot;"/><Run Text=" and "/><Run Text="run command"/><Run Text=" "/><Run Text="without quotes"/><Run Text=" "/><Run Text="&quot;powercfg /h off&quot;"/><Run Text=" "/><Run Text="wich you can copy on main window."/><LineBreak/><Run/></TextBlock>
         <Button x:Name="Done" Content="Close" HorizontalAlignment="Left" Margin="60,139,0,0" VerticalAlignment="Top" Width="75" Click="CloseClick"/>
