@@ -50,7 +50,7 @@ namespace WpfApp1
 
 		public void Convert()
 		{
-			PreResult = (HoursInt * 3600) + (DaysInt * 86400);
+			PreResult = (HoursInt * 60) + (DaysInt * 1440);
 			Result.Text = PreResult.ToString();
 		}
     }

@@ -12,7 +12,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Days" VerticalAlignment="Top"/>
         <TextBox x:Name="Days" HorizontalAlignment="Left" Height="23" Margin="10,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Text="0"/>
         <TextBox x:Name="Result" HorizontalAlignment="Left" Height="23" Margin="112,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
-        <TextBlock HorizontalAlignment="Left" Margin="112,38,0,0" TextWrapping="Wrap" Text="Result in seconds:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="112,38,0,0" TextWrapping="Wrap" Text="Result in minutes:" VerticalAlignment="Top"/>
         <Button Content="Get Result" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top" Width="75" Click="GetResult"/>
 
     </Grid>

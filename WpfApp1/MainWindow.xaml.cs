@@ -52,7 +52,7 @@ namespace WpfApp1
 
 		public async void StartTimer()
 		{
-			await Task.Run(() => Thread.Sleep(usertime * 1000));
+			await Task.Run(() => Thread.Sleep((usertime * 60) * 1000));
 			if (token.IsCancellationRequested) return;
 			Process cmd = new Process();
 			cmd.StartInfo.FileName = "cmd.exe";
@@ -91,17 +91,17 @@ namespace WpfApp1
 
 		private void OneH_Click(object sender, RoutedEventArgs e)
 		{
-			Time.Text = "3600";
+			Time.Text = "60";
 		}
 
 		private void TwoH_Click(object sender, RoutedEventArgs e)
 		{
-			Time.Text = "7200";
+			Time.Text = "120";
 		}
 
 		private void ThreeH_Click(object sender, RoutedEventArgs e)
 		{
-			Time.Text = "10800";
+			Time.Text = "180";
 		}
 
 		private void OpenCMD(object sender, RoutedEventArgs e)
