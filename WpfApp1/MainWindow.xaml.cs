@@ -41,6 +41,7 @@ namespace WpfApp1
 			try
 			{
 				usertime = Int32.Parse(texttime);
+				check = true;
 			}
 			catch (Exception ex)
 			{
